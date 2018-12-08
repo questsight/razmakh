@@ -1,0 +1,44 @@
+.content__form
+  text-align center
+  div
+    form
+      p
+        input
+          border 3px solid secondColor !important
+          background-color lightColor !important
+          color accentColor !important
+          border-radius 50px !important
+          padding 10px 30px !important
+        input:hover
+            background-color secondColor !important
+        label
+          color baseColor !important
+          font-family baseFont !important
+          font-weight normal !important
+          margin-left 10px !important
+          margin-right 10px !important
+          max-width cals(100%-20px) !important
+          span
+            input
+              background-color secondColor !important
+              border none !important
+              border-radius 10px !important
+              height 40px !important
+              width cals(100%-20px) !important
+              max-width 420px !important
+              padding 10px 15px !important
+              +responsive(xs)
+                max-width 300px !important
+                height 30px
+                padding 0 15px !important
+            textarea
+              background-color secondColor !important
+              border none !important
+              border-radius 10px !important
+              width cals(100%-20px) !important
+              padding 10px !important
+              color accentColor !important
+              max-width 420px !important
+              +responsive(xs)
+                max-width 300px !important
+                margin 0 !important

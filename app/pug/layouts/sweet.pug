@@ -1,0 +1,30 @@
+doctype html
+html
+  include ../includes/head.pug
+  body.body
+    .site
+      include ../includes/header.pug
+      .container.content__event
+          .row
+            .col-xs-12
+              .content__caption Для детей
+              .content__content
+                block site__content
+              .content__foto
+                img(src='assets/img/slider/slide_01.jpg')
+              .content__list
+                ul В стоимость услуги входит:
+                  li Разработка концепсии Candy bar
+                  li Подбор меню
+                  li Авторское оформление десертов
+                  li Подбор тематической посуды
+                  li Организация доставки
+                  li Сортировка Candy bar
+                  li Персональный менеджер
+                  li Координатор события от агентства в течение всего мероприятия
+                p Стоимость услуги: 5000руб.
+              form Оставить заявку
+              
+      include ../includes/footer.pug
+    script(src='assets/js/vendor.min.js')
+    script(src='assets/js/scripts.min.js')

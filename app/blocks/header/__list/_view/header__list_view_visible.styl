@@ -1,0 +1,43 @@
+.header__list_view_visible
+  & > li
+    display inline-block
+    vertical-align top
+    position relative
+    &:hover ul
+      visibility visible
+    & > a
+      border-radius(3px)
+      margin 0 5px
+      padding 8px 15px 5px 10px
+      +responsive(md)
+        padding 7px 12px 4px 8px
+    ul
+      visibility hidden
+      transition: all .35s ease 0s
+      background-color lightColor
+      opacity .9
+      width 200px
+      +responsive(md)
+        width 180px
+      margin 20px 0 0 -100px
+      +responsive(md)
+        margin 20px 0 0 -90px
+      padding 0
+      position absolute
+      left 50%
+      z-index 10
+      transition-duration(.35s)
+      overflow hidden
+      li
+        display block
+        vertical-align top
+        position relative
+        a
+          display block
+          background-color lightColor
+          padding 3px 0
+          transition-duration(.35s)
+          &:focus
+            outline 0
+        &:last-child
+          border 0

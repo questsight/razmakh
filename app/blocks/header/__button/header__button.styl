@@ -1,0 +1,18 @@
+.header__button
+  display none
+  background-color secondColor
+  border 0
+  border-radius(0)
+  color themeColor
+  font-size round(fontSize * 1.2)
+  position fixed
+  top 5px
+  right 15px
+  +responsive(sm)
+    display inline-block
+  +responsive(xs)
+    right 0
+  &:focus
+    outline 0
+  &:hover
+    color accentColor

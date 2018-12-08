@@ -1,0 +1,31 @@
+doctype html
+html
+  include ../includes/head.pug
+  body.body
+    .site
+      include ../includes/header.pug
+      .container.content__event
+          .row
+            .col-xs-12
+              .content__caption Свадьба
+              .content__content
+                block site__content
+              .content__foto
+                img(src='assets/img/slider/slide_01.jpg')
+              .content__list
+                ul В стоимость услуги входит:
+                  li Разработка концепсии мероприятия
+                  li Подбор площадки
+                  li Авторское оформление площадки
+                  li Организация питания (фуршет, банкет, кэнди-бар)
+                  li Подбор программы мероприятия (мастер-класс, аниматор, ведущий, музыка, квест и другое)
+                  li Подбор фотографа и видеографа
+                  li Персональный менеджер
+                  li Координатор события от агентства в течение всего мероприятия
+                p Стоимость услуги: 15000руб.
+              .content__tit Оставить заявку
+              .content__form
+              
+      include ../includes/footer.pug
+    script(src='assets/js/vendor.min.js')
+    script(src='assets/js/scripts.min.js')

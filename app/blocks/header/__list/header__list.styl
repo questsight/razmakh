@@ -1,0 +1,29 @@
+.header__list
+  list-style-type none
+  text-align center
+  margin 0
+  padding 10px
+  font-size (fontSize * 1.2)
+  +responsive(md)
+    font-size round(fontSize * 1.1)
+  & > li:first-child
+    & > a
+      border-left 1px solid secondColor  
+  & > li
+    & > a
+      display block
+      background lightColor
+      text-align center
+      transition-duration(.35s)
+      border-right 1px solid secondColor
+      +responsive(md)
+        font-size round(fontSize * 1.1)
+      &:after
+        font-size round(fontSize * 1.1)
+        font-weight bold
+        position relative
+        top -1px
+        left 5px
+      &:focus
+        outline 0
+  

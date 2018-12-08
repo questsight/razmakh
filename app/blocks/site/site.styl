@@ -1,0 +1,23 @@
+.site
+  min-width siteMinWidth
+  max-width siteMaxWidth
+  width 100%
+  min-height 100%
+  position relative
+  padding-bottom stickyFooterHeight
+  overflow hidden
+.site__content
+  margin 0
+  +responsive(xs)
+    margin 30px 0 30px
+.site__sidebar
+  margin 50px 0 50px
+  +responsive(xs)
+    margin 30px 0 30px
+.site__footer
+  min-width siteMinWidth
+  max-width siteMaxWidth
+  width 100%
+  height stickyFooterHeight
+  position absolute
+  bottom 0

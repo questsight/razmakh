@@ -1,0 +1,12 @@
+.sidebar__nav
+  margin-top 40px
+  font-size (fontSize * 1.1)
+  +responsive(md)
+    font-size fontSize
+  ul
+    list-style-type none
+    & > li
+      border-top 2px solid secondColor
+      padding 5px
+    & > li:first-child
+      border-top none
